@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace WebApi
 {
-  public class Startup
+    public class Startup
     {
         public Startup(IConfiguration configuration)
         {
@@ -67,8 +67,9 @@ namespace WebApi
 
             app.UseAuthentication();
             app.UseAuthorization();
-            
-            app.UseEndpoints(endpoints => {
+
+            app.UseEndpoints(endpoints =>
+            {
                 endpoints.MapControllers();
             });
         }
