@@ -66,14 +66,10 @@ namespace WebApi.Services
             return _users.WithoutPasswords();
         }
 
-        public User GetById(int id) {
+        public User GetById(int id) 
+        {
             var user = _users.FirstOrDefault(x => x.Id == id);
-
-            // return user without password
-            if (user != null) 
-                user.Password = null;
-
-            return user;
+            return user.WithoutPassword();
         }
     }
 }
