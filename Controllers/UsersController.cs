@@ -51,6 +51,11 @@ namespace WebApi.Controllers
             if (user == null)
                 return NotFound();
 
+            var user =  _userService.GetById(id);
+
+            if (user == null) {
+                return NotFound();
+            }
             return Ok(user);
         }
     }
