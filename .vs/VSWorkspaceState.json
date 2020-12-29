@@ -1,13 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Backup",
-    "\\Backup1",
-    "\\Controllers",
+    "\\Database",
     "\\Entities",
-    "\\Helpers",
     "\\Models"
   ],
-  "SelectedNode": "\\UpgradeLog3.htm",
+  "SelectedNode": "\\Database\\ApplicationDbContext.cs",
   "PreviewInSolutionExplorer": false
 }

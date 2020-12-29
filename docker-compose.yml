@@ -1,0 +1,8 @@
+﻿version: '3.0'
+services:
+   accountownerapp:
+     image: codemazeblog/accountowner:runtime
+     build:
+       context: .
+     ports:
+       - "8080:5000"

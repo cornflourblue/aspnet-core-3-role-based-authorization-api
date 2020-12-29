@@ -4,7 +4,7 @@ using Microsoft.Extensions.Configuration;
 using System.IO;
 
 
-namespace Auth_Data
+namespace WebAPI.Database
 {
     public class ApplicationDbContext : IdentityDbContext
     {
